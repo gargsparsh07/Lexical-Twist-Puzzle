@@ -28,6 +28,19 @@ public class LexicalTwistPuzzle {
             System.out.println("Transformed: " + transformed);
         } else {
             System.out.println(word2 + " is NOT the reverse of " + word1);
+
+            String combined = (word1 + word2).toUpperCase();
+            System.out.println("Combined: " + combined);
+
+            int vowels = 0, consonants = 0;
+            for (char c : combined.toCharArray()) {
+                if ("AEIOU".indexOf(c) != -1)
+                    vowels++;
+                else if (Character.isLetter(c))
+                    consonants++;
+            }
+
+            System.out.println("Vowels: " + vowels + ", Consonants: " + consonants);
         }
 
         scanner.close();
