@@ -21,5 +21,13 @@ public class LexicalTwistPuzzle {
             return;
         }
 
+        String reversed = new StringBuilder(firstWord).reverse().toString();
+
+        if (reversed.equalsIgnoreCase(secondWord)) {
+            System.out.println("Reverse Match");
+        } else {
+            System.out.println("Not Reverse");
+        }
+
     }
 }
