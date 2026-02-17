@@ -41,8 +41,18 @@ public class LexicalTwistPuzzle {
             }
 
             System.out.println("Vowels: " + vowels + ", Consonants: " + consonants);
+
+            if (vowels > consonants) {
+                System.out.println("More Vowels");
+            } else if (consonants > vowels) {
+                System.out.println("More Consonants");
+            } else {
+                System.out.println("Vowels and Consonants are Equal");
+            }
+
         }
 
         scanner.close();
+
     }
 }
